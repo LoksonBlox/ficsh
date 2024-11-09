@@ -1,5 +1,6 @@
-local fishingPoint1 = Vector3.new(-787, 132, -3104)         -- Coordinates for Fishing Point 1
-local mainFishingPoint = Vector3.new(-1521.34, -234.71, -2877.44) -- Coordinates for Main Fishing Point
+local fishingPoint1 = Vector3.new(-787, 132, -3104)                -- Coordinates for Fishing Point 1
+local mainFishingPoint = Vector3.new(-1521.34, -234.71, -2877.44)  -- Coordinates for Main Fishing Point
+local sellingPoint = Vector3.new(-928.36, 131.08, -1108.83)        -- Coordinates for Selling Point
 
 -- Create ScreenGui
 local screenGui = Instance.new("ScreenGui")
@@ -7,7 +8,7 @@ screenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 
 -- Create a frame to hold the buttons and make it draggable
 local mainFrame = Instance.new("Frame")
-mainFrame.Size = UDim2.new(0, 220, 0, 150)
+mainFrame.Size = UDim2.new(0, 220, 0, 190) -- Adjusted height for new button
 mainFrame.Position = UDim2.new(0.5, -110, 0.5, -75)
 mainFrame.BackgroundColor3 = Color3.fromRGB(30, 30, 30) -- Dark theme
 mainFrame.BorderSizePixel = 0
@@ -60,7 +61,7 @@ end)
 local mainFishingButton = Instance.new("TextButton")
 mainFishingButton.Size = UDim2.new(1, -20, 0, 30)
 mainFishingButton.Position = UDim2.new(0, 10, 0, 70)
-mainFishingButton.Text = "Teleport to Main Fishing"
+mainFishingButton.Text = "Teleport to OP fishing point"
 mainFishingButton.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
 mainFishingButton.TextColor3 = Color3.fromRGB(255, 255, 255)
 mainFishingButton.Font = Enum.Font.Gotham
@@ -81,10 +82,35 @@ mainFishingButton.MouseLeave:Connect(function()
     mainFishingButton.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
 end)
 
+-- Create the "Teleport to Selling Point" button
+local sellingPointButton = Instance.new("TextButton")
+sellingPointButton.Size = UDim2.new(1, -20, 0, 30)
+sellingPointButton.Position = UDim2.new(0, 10, 0, 105)
+sellingPointButton.Text = "Teleport to Selling Point"
+sellingPointButton.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+sellingPointButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+sellingPointButton.Font = Enum.Font.Gotham
+sellingPointButton.TextSize = 16
+sellingPointButton.BorderSizePixel = 0
+sellingPointButton.Parent = mainFrame
+
+-- Add rounding to the sellingPointButton
+local button3Corner = Instance.new("UICorner")
+button3Corner.CornerRadius = UDim.new(0, 10)
+button3Corner.Parent = sellingPointButton
+
+-- Hover effect for sellingPointButton
+sellingPointButton.MouseEnter:Connect(function()
+    sellingPointButton.BackgroundColor3 = Color3.fromRGB(55, 55, 55)
+end)
+sellingPointButton.MouseLeave:Connect(function()
+    sellingPointButton.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+end)
+
 -- Create a TextBox for username input
 local playerTextBox = Instance.new("TextBox")
 playerTextBox.Size = UDim2.new(1, -20, 0, 30)
-playerTextBox.Position = UDim2.new(0, 10, 0, 105)
+playerTextBox.Position = UDim2.new(0, 10, 0, 140)
 playerTextBox.PlaceholderText = "Enter Username/Display Name"
 playerTextBox.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
 playerTextBox.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -112,6 +138,9 @@ fishingPoint1Button.MouseButton1Click:Connect(function()
 end)
 mainFishingButton.MouseButton1Click:Connect(function()
     teleportToPosition(mainFishingPoint)
+end)
+sellingPointButton.MouseButton1Click:Connect(function()
+    teleportToPosition(sellingPoint)
 end)
 
 -- Function to teleport above a player by partial name
