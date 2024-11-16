@@ -641,6 +641,11 @@ do
     })
 
     Tabs.Home:AddParagraph({
+        Title = "made by king",
+        Content = "@droolingforassrnxd"
+    })
+
+    Tabs.Home:AddParagraph({
         Title = "release!!",
         Content = "nigga hehehe "
     })
