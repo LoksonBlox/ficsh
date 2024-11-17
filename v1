@@ -1,4 +1,4 @@
--- v1.6
+-- v1.1
 
 local ProtectPremium = true
 
@@ -719,7 +719,7 @@ do
     end)
     Slider:SetValue(0.5)
     
-    local autoReelCastShakeT = Tabs.Main:AddToggle("autoReelCastShakeT", {Title = "Auto Fish", Default = false })
+    local autoReelCastShakeT = Tabs.Main:AddToggle("autoReelCastShakeT", {Title = "Auto Fish (equip rod to use)", Default = false })
     autoReelCastShakeT:OnChanged(function(Value)
         autoReel = Value
         AutoCast = Value
