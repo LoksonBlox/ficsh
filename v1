@@ -1,4 +1,4 @@
--- v1.6
+-- v1.1
 
 local ProtectPremium = true
 
@@ -94,7 +94,8 @@ local teleportSpots = {
     vertigo = CFrame.new(-112.007278, -492.901093, 1040.32788, -1, 0, 0, 0, 1, 0, 0, 0, -1),
     volcano = CFrame.new(-1888.52319, 163.847565, 329.238281, 1, 0, 0, 0, 1, 0, 0, 0, 1),
     wilson = CFrame.new(2938.80591, 277.474762, 2567.13379, 0.4648332, 0, 0.885398269, 0, 1, 0, -0.885398269, 0, 0.4648332),
-    wilsons_rod = CFrame.new(2879.2085, 135.07663, 2723.64233, 0.970463336, -0.168695927, -0.172460333, 0.141582936, -0.180552125, 0.973321974, -0.195333466, -0.968990743, -0.151334763)
+    wilsons_rod = CFrame.new(2879.2085, 135.07663, 2723.64233, 0.970463336, -0.168695927, -0.172460333, 0.141582936, -0.180552125, 0.973321974, -0.195333466, -0.968990743, -0.151334763),
+    The_Depths = CFrame.new(1294.50, -701.38, 1599.49)
 }
 local FishAreas = {
     Roslit_Bay = CFrame.new(-1663.73889, 149.234116, 495.498016, 0.0380855016, 4.08820178e-08, -0.999274492, 5.74658472e-08, 1, 4.3101906e-08, 0.999274492, -5.90657123e-08, 0.0380855016),
@@ -120,7 +121,8 @@ local FishAreas = {
     Mushgrove_Stone = CFrame.new(2525.36011, 131.000015, -776.184021, 1, 1.90145943e-08, -3.24206519e-15, -1.90145943e-08, 1, -1.06596836e-07, 1.21516956e-15, 1.06596836e-07, 1),
     Keepers_Altar = CFrame.new(1307.13599, -805.292236, -161.363998, 1, 2.40881981e-10, -3.25609947e-15, -2.40881981e-10, 1, -1.35044154e-09, 3.255774e-15, 1.35044154e-09, 1),
     Lava = CFrame.new(-1959.86206, 193.144821, 271.960999, 1, -6.02453598e-09, -2.97388313e-15, 6.02453598e-09, 1, 3.37767716e-08, 2.77039384e-15, -3.37767716e-08, 1),
-    Roslit_Pond_Seaweed = CFrame.new(-1785.2869873046875, 148.15780639648438, 639.9299926757812),    
+    Roslit_Pond_Seaweed = CFrame.new(-1785.2869873046875, 148.15780639648438, 639.9299926757812),
+    Depths_Fishing_Spot = CFrame.new(1298.59, -741.80, 1452.43), 
 }
 local racistPeople = {
     Witch = CFrame.new(409.638092, 134.451523, 311.403687, -0.74079144, 0, 0.671735108, 0, 1, 0, -0.671735108, 0, -0.74079144),
@@ -146,6 +148,7 @@ local racistPeople = {
     Mod_Keeper = CFrame.new(-39.0905838, -245.141144, 195.837891, -0.948549569, -0.0898146331, -0.303623199, -0.197293222, 0.91766715, 0.34490931, 0.247647122, 0.387066364, -0.888172567),
     Ashe = CFrame.new(-1709.94055, 149.862411, 729.399536, -0.92290163, 0.0273250472, -0.384064913, 0, 0.997478604, 0.0709675401, 0.385035753, 0.0654960647, -0.920574605),
     Alfredrickus = CFrame.new(-1520.60632, 142.923264, 764.522034, 0.301733732, 0.390740901, -0.869642735, 0.0273988936, 0.908225596, 0.417582989, 0.952998459, -0.149826124, 0.26333645),
+    Depths_Merchant = CFrame.new(949.04, -711.56, 1262.58),
 }
 local itemSpots = {
     Training_Rod = CFrame.new(457.693848, 148.357529, 230.414307, 1, -0, 0, 0, 0.975410998, 0.220393807, -0, -0.220393807, 0.975410998),
@@ -166,7 +169,8 @@ local itemSpots = {
     Crab_Cage = CFrame.new(474.803589, 149.664566, 229.49469, -0.721874595, 0, 0.692023814, 0, 1, 0, -0.692023814, 0, -0.721874595),
     GPS = CFrame.new(517.896729, 149.217636, 284.856842, 7.39097595e-06, -0.719539165, -0.694451928, -1, -7.39097595e-06, -3.01003456e-06, -3.01003456e-06, 0.694451928, -0.719539165),
     Basic_Diving_Gear = CFrame.new(369.174774, 132.508835, 248.705368, 0.228398502, -0.158300221, -0.96061182, 1.58026814e-05, 0.986692965, -0.162594408, 0.973567724, 0.037121132, 0.225361705),
-    Fish_Radar = CFrame.new(365.75177, 134.50499, 274.105804, 0.704499543, -0.111681774, -0.70086211, 1.32396817e-05, 0.987542748, -0.157350808, 0.709704578, 0.110844307, 0.695724905)
+    Fish_Radar = CFrame.new(365.75177, 134.50499, 274.105804, 0.704499543, -0.111681774, -0.70086211, 1.32396817e-05, 0.987542748, -0.157350808, 0.709704578, 0.110844307, 0.695724905),
+    Rod_Of_The_Depths = CFrame.new(1704.92, -902.53, 1442.00)
 }
 
 -- Locals
@@ -637,17 +641,17 @@ do
     local section = Tabs.Home:AddSection("Change Log:")
     Tabs.Home:AddParagraph({
         Title = "Information",
-        Content = "[🟩] - Added\n[🟧] - Changed\n[🟥] - Removed\n[⭐] - Premium Feature"
+        Content = "[🟩] - Added\n[🟧] - Changed/Buggy\n[🟥] - Removed\n[✝️] - extra\n[⭐] - Credits"
     })
 
     Tabs.Home:AddParagraph({
-        Title = "made by king",
-        Content = "@droolingforassrnxd"
+        Title = "update v1.1!!",
+        Content = "[🟩] - New Depths teleports\n[🟧] - Unoptional full bright"
     })
 
     Tabs.Home:AddParagraph({
-        Title = "release!!",
-        Content = "nigga hehehe "
+        Title = "release v1!!",
+        Content = "[🟩] - Released!\n[✝️] - Lowkey horrible teleports\n[✝️] - Not sure why theres a premium tab\n[⭐] - made by king @droolingforassrnxd"
     })
 
     local section = Tabs.Premium:AddSection("Fishing⭐")
@@ -814,7 +818,7 @@ do
 
     local DropdownPlace = Tabs.Teleports:AddDropdown("DropdownPlace", {
         Title = "Place teleport",
-        Values = {"altar", "arch", "birch", "brine", "deep", "deepshop", "enchant", "keepers", "mod_house", "moosewood", "mushgrove", "roslit", "snow", "snowcap", "spike", "statue", "sunstone", "swamp", "terrapin", "trident", "vertigo", "volcano", "wilson", "wilsons_rod"},
+        Values = {"altar", "arch", "birch", "brine", "deep", "deepshop", "enchant", "keepers", "mod_house", "moosewood", "mushgrove", "roslit", "snow", "snowcap", "spike", "statue", "sunstone", "swamp", "terrapin", "trident", "vertigo", "volcano", "wilson", "wilsons_rod", "The_Depths"},
         Multi = false,
     })
     DropdownPlace:OnChanged(function(Value)
@@ -830,7 +834,7 @@ do
 
     local DropdownArea = Tabs.Teleports:AddDropdown("DropdownArea", {
         Title = "Fish Area teleport",
-        Values = {"Roslit_Bay", "Ocean", "Snowcap_Pond", "Moosewood_Docks", "Deep_Ocean", "Vertigo", "Snowcap_Ocean", "Harvesters_Spike", "SunStone", "Roslit_Bay_Ocean", "Moosewood_Pond", "Terrapin_Ocean", "Isonade", "Moosewood_Ocean", "Roslit_Pond", "Moosewood_Ocean_Mythical", "Terrapin_Olm", "The_Arch", "Scallop_Ocean", "SunStone_Hidden", "Mushgrove_Stone", "Keepers_Altar", "Lava", "Roslit_Pond_Seaweed"},
+        Values = {"Roslit_Bay", "Ocean", "Snowcap_Pond", "Moosewood_Docks", "Deep_Ocean", "Vertigo", "Snowcap_Ocean", "Harvesters_Spike", "SunStone", "Roslit_Bay_Ocean", "Moosewood_Pond", "Terrapin_Ocean", "Isonade", "Moosewood_Ocean", "Roslit_Pond", "Moosewood_Ocean_Mythical", "Terrapin_Olm", "The_Arch", "Scallop_Ocean", "SunStone_Hidden", "Mushgrove_Stone", "Keepers_Altar", "Lava", "Roslit_Pond_Seaweed", "Depths_Fishing_Spot"},
         Multi = false,
     })
     DropdownArea:OnChanged(function(Value)
@@ -847,7 +851,7 @@ do
 
     local DropdownNPC = Tabs.Teleports:AddDropdown("DropdownNPC", {
         Title = "Teleport to Npc",
-        Values = {"Witch", "Quiet_Synph", "Pierre", "Phineas", "Paul", "Shipwright", "Angler", "Marc", "Lucas", "Latern_Keeper", "Inn_Keeper", "Roslit_Keeper", "FishingNpc_1", "FishingNpc_2", "FishingNpc_3", "Henry", "Daisy", "Appraiser", "Merchant", "Mod_Keeper", "Ashe", "Alfredrickus"},
+        Values = {"Witch", "Quiet_Synph", "Pierre", "Phineas", "Paul", "Shipwright", "Angler", "Marc", "Lucas", "Latern_Keeper", "Inn_Keeper", "Roslit_Keeper", "FishingNpc_1", "FishingNpc_2", "FishingNpc_3", "Henry", "Daisy", "Appraiser", "Merchant", "Mod_Keeper", "Ashe", "Alfredrickus", "Depths_Merchant"},
         Multi = false,
     })
     DropdownNPC:OnChanged(function(Value)
@@ -870,7 +874,7 @@ do
 
     local DropdownItems = Tabs.Teleports:AddDropdown("Dropdown3", {
         Title = "Teleport to Items",
-        Values = {"Training_Rod", "Plastic_Rod", "Lucky_Rod", "Nocturnal_Rod", "Kings_Rod", "Flimsy_Rod", "Fast_Rod", "Carbon_Rod", "Long_Rod", "Mythical_Rod", "Midas_Rod", "Trident_Rod", "Basic_Diving_Gear", "Fish_Radar", "Enchated_Altar", "Bait_Crate", "Quality_Bait_Crate", "Crab_Cage", "GPS"},
+        Values = {"Training_Rod", "Plastic_Rod", "Lucky_Rod", "Nocturnal_Rod", "Kings_Rod", "Flimsy_Rod", "Fast_Rod", "Carbon_Rod", "Long_Rod", "Mythical_Rod", "Midas_Rod", "Trident_Rod", "Basic_Diving_Gear", "Fish_Radar", "Enchated_Altar", "Bait_Crate", "Quality_Bait_Crate", "Crab_Cage", "GPS", "Rod_Of_The_Depths"},
         Multi = false,
     })
     DropdownItems:OnChanged(function(Value)
@@ -1248,3 +1252,21 @@ if deviceType == "Mobile" then
     C.CornerRadius = UDim.new(1, 0)
     C.Parent = B
 end
+
+-- Full Bright Script
+local Lighting = game:GetService("Lighting")
+
+-- Function to set full bright
+local function enableFullBright()
+    Lighting.Brightness = 2
+    Lighting.ClockTime = 12 -- Set to noon
+    Lighting.FogEnd = 100000 -- Remove fog
+    Lighting.GlobalShadows = false -- Disable shadows
+    Lighting.OutdoorAmbient = Color3.fromRGB(128, 128, 128) -- Neutral ambient
+end
+
+-- Enable full bright
+enableFullBright()
+
+-- Optional: Prevent other scripts from changing lighting
+Lighting.Changed:Connect(enableFullBright)
