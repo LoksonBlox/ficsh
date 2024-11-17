@@ -1,4 +1,4 @@
--- v1.1
+-- v1.6
 
 local ProtectPremium = true
 
@@ -646,7 +646,7 @@ do
 
     Tabs.Home:AddParagraph({
         Title = "update v1.1!!",
-        Content = "[🟩] - New Depths teleports\n[🟧] - Unoptional full bright"
+        Content = "[🟩] - New Depths teleports\n[🟧] - Unoptional full bright\n[🟧] - 'Change Log' is now in use"
     })
 
     Tabs.Home:AddParagraph({
