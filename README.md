@@ -1,6 +1,6 @@
 # Fisch - Roblox Script
 
-Welcome to the Fisch script for Roblox, made with the [Fluent Library](https://github.com/dawid-scripts/Fluent). This script enhances your Roblox experience with various features designed to improve gameplay.
+Welcome to the [Fisch](https://www.roblox.com/games/16732694052/UPD-Fisch) script for Roblox, made with the [Fluent Library](https://github.com/dawid-scripts/Fluent). This script enhances your Roblox experience with various features designed to improve gameplay.
 
 ## Features:
 - **Fluent Library Integration**: Utilizing the powerful Fluent library for smooth and efficient script execution.
