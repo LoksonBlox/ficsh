@@ -2,3 +2,4 @@ if game.PlaceId == 16732694052 then
     loadstring(game:HttpGet("https://raw.githubusercontent.com/fentfeen/ficsh/refs/heads/main/v1"))()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/fentfeen/ficsh/refs/heads/main/full%20bright"))()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/fentfeen/ficsh/refs/heads/main/inf%20zoom"))()
+print("loaded scripts")
