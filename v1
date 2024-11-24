@@ -95,7 +95,8 @@ local teleportSpots = {
     volcano = CFrame.new(-1888.52319, 163.847565, 329.238281, 1, 0, 0, 0, 1, 0, 0, 0, 1),
     wilson = CFrame.new(2938.80591, 277.474762, 2567.13379, 0.4648332, 0, 0.885398269, 0, 1, 0, -0.885398269, 0, 0.4648332),
     wilsons_rod = CFrame.new(2879.2085, 135.07663, 2723.64233, 0.970463336, -0.168695927, -0.172460333, 0.141582936, -0.180552125, 0.973321974, -0.195333466, -0.968990743, -0.151334763),
-    The_Depths = CFrame.new(1294.50, -701.38, 1599.49)
+    The_Depths = CFrame.new(1294.50, -701.38, 1599.49),
+    Forsaken = CFrame.new(-2509.66, 135.71, 1572.59),
 }
 local FishAreas = {
     Roslit_Bay = CFrame.new(-1663.73889, 149.234116, 495.498016, 0.0380855016, 4.08820178e-08, -0.999274492, 5.74658472e-08, 1, 4.3101906e-08, 0.999274492, -5.90657123e-08, 0.0380855016),
@@ -124,6 +125,7 @@ local FishAreas = {
     Roslit_Pond_Seaweed = CFrame.new(-1785.2869873046875, 148.15780639648438, 639.9299926757812),
     Depths_Fishing_Spot = CFrame.new(1298.59, -741.80, 1452.43),
     Depths_Event_Spot = CFrame.new(1092.80, -740.92, 1446.10),
+    forsaken_pond = CFrame.new(-2672.43, 170.50, 1747.25),
 }
 local racistPeople = {
     Witch = CFrame.new(409.638092, 134.451523, 311.403687, -0.74079144, 0, 0.671735108, 0, 1, 0, -0.671735108, 0, -0.74079144),
@@ -645,19 +647,21 @@ do
         Content = "[🟩] - Added\n[🟧] - Changed/Buggy\n[🟥] - Removed\n[✝️] - extra\n[⭐] - Credits"
     })
 
+    
+
     Tabs.Home:AddParagraph({
         Title = "update v1.2!!",
-        Content = "\n[🟩] - infinite zoom\n\n[🟩] - full bright\n\n[🟩] - Added Depthps event teleport" 
+        Content = "[🟩] - infinite zoom\n[🟩] - full bright" 
     })
 
     Tabs.Home:AddParagraph({
         Title = "update v1.1!!",
-        Content = "\n[🟩] - New Depths teleports\n\n[🟩] - added fly, still buggy\n\n[🟧] - Unoptional full bright\n\n[🟧] - 'Change Log' is now in use"
+        Content = "[🟩] - New Depths teleports\n[🟩] - added fly, still buggy\n[🟧] - Unoptional full bright\n[🟧] - 'Change Log' is now in use"
     })
 
     Tabs.Home:AddParagraph({
         Title = "release v1!!",
-        Content = "\n[🟩] - Released!\n\n[✝️] - Lowkey horrible teleports\n\n[✝️] - Not sure why theres a premium tab\n\n[⭐] - made by king @droolingforassrnxd"
+        Content = "[🟩] - Released!\n[✝️] - Lowkey horrible teleports\n[✝️] - Not sure why theres a premium tab\n[⭐] - made by king @droolingforassrnxd"
     })
 
     local section = Tabs.Premium:AddSection("Fishing⭐")
@@ -824,7 +828,7 @@ do
 
     local DropdownPlace = Tabs.Teleports:AddDropdown("DropdownPlace", {
         Title = "Place teleport",
-        Values = {"altar", "arch", "birch", "brine", "deep", "deepshop", "enchant", "keepers", "mod_house", "moosewood", "mushgrove", "roslit", "snow", "snowcap", "spike", "statue", "sunstone", "swamp", "terrapin", "trident", "vertigo", "volcano", "wilson", "wilsons_rod", "The_Depths"},
+        Values = {"altar", "arch", "birch", "brine", "deep", "deepshop", "enchant", "keepers", "mod_house", "moosewood", "mushgrove", "roslit", "snow", "snowcap", "spike", "statue", "sunstone", "swamp", "terrapin", "trident", "vertigo", "volcano", "wilson", "wilsons_rod", "The_Depths", "forsaken"},
         Multi = false,
     })
     DropdownPlace:OnChanged(function(Value)
@@ -840,7 +844,7 @@ do
 
     local DropdownArea = Tabs.Teleports:AddDropdown("DropdownArea", {
         Title = "Fish Area teleport",
-        Values = {"Roslit_Bay", "Ocean", "Snowcap_Pond", "Moosewood_Docks", "Deep_Ocean", "Vertigo", "Snowcap_Ocean", "Harvesters_Spike", "SunStone", "Roslit_Bay_Ocean", "Moosewood_Pond", "Terrapin_Ocean", "Isonade", "Moosewood_Ocean", "Roslit_Pond", "Moosewood_Ocean_Mythical", "Terrapin_Olm", "The_Arch", "Scallop_Ocean", "SunStone_Hidden", "Mushgrove_Stone", "Keepers_Altar", "Lava", "Roslit_Pond_Seaweed", "Depths_Fishing_Spot", "Depths_Event_Spot"},
+        Values = {"Roslit_Bay", "Ocean", "Snowcap_Pond", "Moosewood_Docks", "Deep_Ocean", "Vertigo", "Snowcap_Ocean", "Harvesters_Spike", "SunStone", "Roslit_Bay_Ocean", "Moosewood_Pond", "Terrapin_Ocean", "Isonade", "Moosewood_Ocean", "Roslit_Pond", "Moosewood_Ocean_Mythical", "Terrapin_Olm", "The_Arch", "Scallop_Ocean", "SunStone_Hidden", "Mushgrove_Stone", "Keepers_Altar", "Lava", "Roslit_Pond_Seaweed", "Depths_Fishing_Spot", "Depths_Event_Spot", "forsaken_pond"},
         Multi = false,
     })
     DropdownArea:OnChanged(function(Value)
